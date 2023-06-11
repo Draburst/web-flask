@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Memory Game</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("static/images/Conning1.png");
+      background-size: cover;
+    }
+
+    #game-board {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 100px;
+      height: 100px;
+      background-color: #ddd;
+      border: 1px solid #aaa;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .flipped {
+      background-color: #bbb;
+    }
+
+    #message {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    #play-again {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+  <div id="game-board"></div>
+  <div id="message"></div>
+  <button id="play-again">Play Again</button>
+  <script src="/static/game.js"></script>
+
+</body>
+</html>
